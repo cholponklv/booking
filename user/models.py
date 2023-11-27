@@ -38,10 +38,11 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
+    email_token = models.IntegerField(null=True, blank=True)
     objects = MyCustomUserManger()
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['phone_number', 'name']
 
     def __str__(self):
-        return self.username
+        return self.email

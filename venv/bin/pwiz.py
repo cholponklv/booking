@@ -1,4 +1,4 @@
-#!/home/cholponklv/Desktop/project/events/venv/bin/python3
+#!/home/atazhan/Desktop/projects/booking/venv/bin/python3
 
 import datetime
 import os
